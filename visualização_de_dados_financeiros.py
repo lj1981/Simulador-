@@ -8,9 +8,6 @@ Original file is located at
 
 visualização de dados financeiros
 """
-
-!pip install yfinance
-
 """## Importação das bibliotecas"""
 
 import pandas as pd
