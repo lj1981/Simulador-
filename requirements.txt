@@ -4,3 +4,4 @@ matplotlib.pyplot
 seaborn 
 plotly.express 
 yfinance 
+-r
