@@ -5,4 +5,4 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD [ "sh", "-c", "python3 visualização_de_dados_financeiros.py && sleep 120 && python3 visualização_de_dados_financeiros.py" ]
+CMD [ "sh", "-c", "python3 visualização_de_dados_financeiros.py " ]
