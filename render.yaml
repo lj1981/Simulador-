@@ -1,6 +1,7 @@
 services:
-  - type: worker
-    name: finance-data-worker
+  - type: web
+    name: finance-app
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python script.py"
+    startCommand: "python app.py"
+
