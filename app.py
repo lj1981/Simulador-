@@ -1,17 +1,14 @@
-import os
 from flask import Flask
+import os
 
-# Inicializar o app Flask
 app = Flask(__name__)
 
-# Rota principal para testar
-@app.route('/')
-def index():
-    return "Hello, Render! Your Flask app is running."
+# Rota principal
+@app.route("/")
+def home():
+    return "Hello, Render!"
 
-# Ponto de entrada da aplicação
-if __name__ == '__main__':
-    # Render exige que o aplicativo escute na porta especificada pela variável PORT
-    port = int(os.getenv("PORT", 5000))  # Porta padrão 5000 caso não exista a variável de ambiente PORT
-    app.run(host='0.0.0.0', port=port)  # Host 0.0.0.0 permite conexões externas
-
+# Certifique-se de usar a porta especificada pela variável de ambiente
+if __name__ == "__main__":
+    port = int(os.getenv("PORT", 5000))  # Padrão 5000 caso PORT não esteja definido
+    app.run(host="0.0.0.0", port=port)
