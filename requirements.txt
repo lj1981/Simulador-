@@ -5,5 +5,6 @@ seaborn
 plotly.express 
 yfinance 
 requests
-flask 
+flask
+gunicorn
 
