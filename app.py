@@ -1,14 +1,12 @@
-from flask import Flask
+from flask import Flask, render_template_string
 import os
 
 app = Flask(__name__)
 
-# Rota principal
 @app.route("/")
 def home():
-    return "Hello, Render!"
+    return "<h1>Aplicação de Análise de Dados Financeiros</h1><p>Seu código está funcionando corretamente no Render!</p>"
 
-# Certifique-se de usar a porta especificada pela variável de ambiente
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 5000))  # Padrão 5000 caso PORT não esteja definido
+    port = int(os.getenv("PORT", 5000))  # Porta configurada pelo Render
     app.run(host="0.0.0.0", port=port)
