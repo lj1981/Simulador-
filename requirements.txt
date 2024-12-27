@@ -1,10 +1,10 @@
-pandas 
+flask
+pandas
 numpy
 matplotlib
-seaborn 
-plotly.express 
-yfinance 
-requests
-flask
+seaborn
+plotly
+yfinance
 gunicorn
+
 
