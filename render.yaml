@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: finance-app
+    name: visualização_de_dados_financeiros.py
     env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python app.py"
