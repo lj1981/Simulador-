@@ -1,9 +1,6 @@
 services:
-  - type: web
-    name: flask-app
+  - type: worker
+    name: finance-data-worker
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python app.py"
-    plan: free  # Ou "starter", "pro", etc.
-
-
+    startCommand: "python script.py"
