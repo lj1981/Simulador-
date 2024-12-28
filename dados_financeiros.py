@@ -39,7 +39,7 @@ gol_df[(gol_df[('Close', 'GOLL4.SA')] >= 1.15) & (gol_df[('Close', 'GOLL4.SA')] 
 
 gol_df.to_csv('gol.csv')
 
-gol_df2 = pd.read_csv('/content/gol.csv')
+gol_df2 = pd.read_csv('/https://github.com/lj1981/Simulador-/tree/main/gol.csv')
 gol_df2
 
 """## Base de dados com mais ações
@@ -75,7 +75,7 @@ acoes_df.isnull().sum()
 
 acoes_df.to_csv('acoes.csv')
 
-acoes_df = pd.read_csv('acoes.csv')
+acoes_df = pd.read_csv('https://github.com/lj1981/Simulador-/tree/main/acoes.csv')
 acoes_df
 
 acoes_df.columns[1:]
