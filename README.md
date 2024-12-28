@@ -1,25 +1,21 @@
-Nesta primeira parte do projeto fiz
+Foi realizar análises financeiras e criar visualizações de dados.
 
-Download e bases de dados financeiras e visualização
+Ferramentas utilizadas: Para o desenvolvimento deste projeto, foram utilizadas as seguintes bibliotecas Python:
 
-Cálculo de taxas de retorno de ativos
+Pandas: Manipulação e análise de dados.
+NumPy: Operações numéricas e matriciais.
+Matplotlib, Seaborn, Plotly: Criação de visualizações e gráficos.
+yfinance: Obtenção de dados financeiros de diversas fontes.
+statsmodels: Modelagem estatística e econometria.
+scikit-learn: Aprendizado de máquina e mineração de dados.
+gunicorn: Servidor HTTP para deploy da aplicação.
 
-Cálculo de risco
+Coleta e preparação de dados: Utilizando a biblioteca yfinance, coletei dados históricos de preços de diversos ativos. Com o Pandas, organizei e limpei os dados, realizando cálculos como retornos e volatilidade.
+Análise exploratória de dados: Através de Matplotlib e Seaborn, visualizei a distribuição dos retornos, a correlação entre os ativos e identifiquei padrões nos dados.
 
-Alocação e otimização de portfólios
+Modelagem e otimização: Construí modelos de precificação de ativos utilizando o statsmodels e otimizei portfólios com base na teoria de Markowitz, implementando algoritmos em NumPy.
 
-Precificação de ativos com CAPM (Capital Asset Pricing Model)
-
-Simulações Monte Carlo para previsão de preços
-
-Utilei ate o momento estes mdulos :
-
-import pandas as pd  - 
-import numpy as np   -
-from pandas_datareader import data  -  
-import matplotlib.pyplot as plt     -
-import seaborn as sns               -  
-import plotly.express as px         -
-import yfinance as yf               -
+Deploy: Para disponibilizar a aplicação, utilizei o gunicorn como servidor HTTP, permitindo a consulta dos resultados através de uma interface web.
 
 
+A escolha das bibliotecas Pandas, NumPy e scikit-learn foi fundamental para a manipulação eficiente de grandes volumes de dados e a implementação de algoritmos de aprendizado de máquina. A biblioteca yfinance facilitou a obtenção de dados financeiros em tempo real, enquanto Matplotlib, Seaborn e Plotly permitiram a criação de visualizações personalizadas e interativas. 
