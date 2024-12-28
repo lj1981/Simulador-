@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Dados_financeiros.ipynb
+"""Dados_financeiros.py
 
-Dados financeiros
-"""
-
-#!pip install yfinance
+Dados financeiros"""
 
 """## Importação das bibliotecas"""
 
@@ -40,7 +37,7 @@ gol_df[(gol_df[('Close', 'GOLL4.SA')] >= 1.15) & (gol_df[('Close', 'GOLL4.SA')] 
 gol_df.to_csv('gol.csv')
 
 gol_df2 = pd.read_csv('/https://github.com/lj1981/Simulador-/tree/main/gol.csv')
-gol_df2
+print(gol_df2)
 
 """## Base de dados com mais ações
 
@@ -76,7 +73,7 @@ acoes_df.isnull().sum()
 acoes_df.to_csv('acoes.csv')
 
 acoes_df = pd.read_csv('https://github.com/lj1981/Simulador-/tree/main/acoes.csv')
-acoes_df
+print(acoes_df)
 
 acoes_df.columns[1:]
 
@@ -151,8 +148,8 @@ acoes_ex_df = acoes_ex_df.rename(columns={'ABEV3.SA': 'AMBEV', 'ODPV3.SA': 'ODON
 
 acoes_ex_df.to_csv('acoes_ex.csv')
 
-acoes_ex_df = pd.read_csv('acoes_ex.csv')
-acoes_ex_df
+acoes_ex_df = pd.read_csv('/https://github.com/lj1981/Simulador-/tree/main/acoes_ex.csv')
+print(acoes_ex_df)
 
 acoes_ex_df.describe()
 
